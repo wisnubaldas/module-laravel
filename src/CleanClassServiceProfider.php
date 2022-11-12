@@ -6,6 +6,8 @@ use Illuminate\Support\ServiceProvider;
 use Wisnubaldas\CleanClass\Local\DomainCommand;
 use Wisnubaldas\CleanClass\Local\DriverCommand;
 use Wisnubaldas\CleanClass\Local\MakeRepositoriesCommand;
+use Wisnubaldas\CleanClass\Local\UsecaseCommand;
+
 class CleanClassServiceProfider extends ServiceProvider {
     public function boot()
     {

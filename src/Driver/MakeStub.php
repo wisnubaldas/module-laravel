@@ -1,5 +1,5 @@
 <?php
-namespace App\Driver;
+namespace Wisnubaldas\CleanClass\Driver;
 /**
  * bikin template kostum stub
  */

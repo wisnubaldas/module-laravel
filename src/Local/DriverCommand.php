@@ -1,45 +1,44 @@
 <?php
 
-namespace App\Console\Commands\Local;
+namespace Wisnubaldas\CleanClass\Local;
 
 use Illuminate\Console\Command;
-use App\Driver\MakeStub;
+use Wisnubaldas\CleanClass\Driver\MakeStub;
 use Illuminate\Filesystem\Filesystem;
-
-class MakeRepositoriesCommand extends Command
+class DriverCommand extends Command
 {
     use MakeStub;
     protected $stub_name;
     protected $name_space;
     protected $path_nya;
-
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'make:repositories {name}';
+    protected $signature = 'make:driver {name}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Bikin class repositories ';
-    public function __construct(Filesystem $files)
-    {
-        parent::__construct();
+    protected $description = 'Bikin trait driver';
 
-        $this->files = $files;
-        $this->stub_name = 'repo.stub';
-        $this->name_space = 'App\\Repositories';
-        $this->path_nya = base_path('app/Repositories');
-    }
     /**
      * Execute the console command.
      *
      * @return int
      */
+    public function __construct(Filesystem $files)
+    {
+        parent::__construct();
+
+        $this->files = $files;
+        $this->stub_name = 'driver.stub';
+        $this->name_space = 'App\\Driver';
+        $this->path_nya = base_path('app/Driver');
+    }
     public function handle()
     {
         $path = $this->getSourceFilePath();

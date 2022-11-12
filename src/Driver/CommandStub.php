@@ -1,5 +1,5 @@
 <?php
-namespace App\Driver;
+namespace Wisnubaldas\CleanClass\Driver;
 trait CommandStub {
     public function getStubVariables()
     {

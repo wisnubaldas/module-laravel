@@ -13,6 +13,16 @@
         }
     ],
     "require": {
-        
-    }
+        "php" : "^7.4 | ^8.0",
+        "illuminate/console": "^6.20|^8.76|^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wisnubaldas\\CleanClass\\CleanClassServiceProfider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Console\Commands\Local;
+namespace Wisnubaldas\CleanClass\Local;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 // use App\Driver\MakeStub;
-use App\Driver\CommandStub;
+use Wisnubaldas\CleanClass\Driver\CommandStub;
 
-class DomainCommand extends Command
+class UsecaseCommand extends Command
 {
     use CommandStub;
     protected $stub_name;
@@ -22,27 +22,30 @@ class DomainCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:domain {name} {--E|extend=}';
+    protected $signature = 'make:usecase {name} {--E|extend=}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Bikin class domain, 
-                            {name : Nama class untuk domainnya}
-                            {--extend|-E : Class domain yg akan di extend} ';
+    protected $description = 'Bikin class usecase, {-E} extend {nama class}';
+
+    /**
+     * Execute the console command.
+     *
+     * @return int
+     */
     public function __construct(Filesystem $files)
     {
         parent::__construct();
 
         $this->files = $files;
-        $this->stub_name = 'domain.stub';
-        $this->name_space = 'App\\Domain';
-        $this->path_nya = 'app/Domain';
+        $this->stub_name = 'usecase.stub';
+        $this->name_space = 'App\\UseCase';
+        $this->path_nya = 'app/UseCase';
         
     }
-    
     public function handle()
     {
         $i = $this->argument('name');
@@ -63,9 +66,9 @@ class DomainCommand extends Command
                 $this->info("File : {$path} already exits");
             }
             
-            $this->path_nya = 'app/Domain/Contract';
+            $this->path_nya = 'app/UseCase/Contract';
             $this->stub_name = 'domain_interface.stub';
-            $this->name_space = 'App\\Domain\\Contract';
+            $this->name_space = 'App\\UseCase\\Contract';
 
             $path = $this->getSourceFilePath($this->interfaceName);
             $this->makeDirectory(base_path($this->path_nya));

@@ -1,4 +1,5 @@
 {
+    "version": "1.0.0",
     "name": "wisnubaldas/clean-class",
     "description": "Bikin custom class di laravel",
     "autoload": {

@@ -15,7 +15,8 @@ trait MakeStub
      */
     public function getStubPath()
     {
-        return base_path('stubs/'.$this->stub_name);
+        return __DIR__.'/../stub/'.$this->stub_name;
+        // return base_path('stubs/'.$this->stub_name);
     }
 
     /**

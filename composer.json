@@ -2,6 +2,7 @@
     "version": "1.0.0",
     "name": "wisnubaldas/clean-class",
     "description": "Bikin custom class di laravel",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Wisnubaldas\\CleanClass\\": "src/"

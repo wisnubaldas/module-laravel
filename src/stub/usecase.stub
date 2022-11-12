@@ -1,0 +1,20 @@
+<?php
+namespace {{NAMESPACE}};
+use App\UseCase\Contract\{{INTERFACE}};
+
+class {{CLASS_NAME}} implements {{INTERFACE}}
+{
+    /**
+     * undocumented function summary
+     *
+     * Undocumented function long description
+     *
+     * @param Type $var Description
+     * @return type
+     * @throws conditon
+     **/
+    public function some_func()
+    {
+        
+    }
+}

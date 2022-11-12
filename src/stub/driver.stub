@@ -1,0 +1,19 @@
+<?php
+namespace App\Driver;
+/**
+ * Driver trait
+ */
+
+trait {{CLASS_NAME}}
+{
+    /**
+     * balikin file stub
+     * @return string
+     *
+     */
+    public function some_func()
+    {
+        return true;
+    }
+
+}

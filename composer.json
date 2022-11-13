@@ -8,6 +8,11 @@
             "Wisnubaldas\\CleanClass\\": "src/"
         }
     },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r src/BootScript.php"
+        ]
+    },
     "authors": [
         {
             "name": "wisnubaldas",

@@ -51,6 +51,7 @@ class DomainCommand extends Command
             // prepare
             $this->extract_name($i);
             $this->interfaceName = $this->className.'Interface';
+            $this->className = $this->className.'Domain';
 
             $path = $this->getSourceFilePath($this->className);
             $this->makeDirectory(base_path($this->path_nya));
@@ -80,6 +81,7 @@ class DomainCommand extends Command
             $this->stub_name = 'domain_extend.stub';
             
             $this->extract_name($i);
+            $this->className = $this->className.'Domain';
             $this->useClass = $this->name_space.'\\'.str_replace('/','\\',$o);
 
             $this->extendClass = str_replace('/','\\',$o);

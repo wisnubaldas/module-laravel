@@ -54,6 +54,7 @@ class UsecaseCommand extends Command
             // prepare
             $this->extract_name($i);
             $this->interfaceName = $this->className.'Interface';
+            $this->className = $this->className.'Case';
 
             $path = $this->getSourceFilePath($this->className);
             $this->makeDirectory(base_path($this->path_nya));
@@ -83,6 +84,8 @@ class UsecaseCommand extends Command
             $this->stub_name = 'domain_extend.stub';
             
             $this->extract_name($i);
+            $this->className = $this->className.'Case';
+            
             $this->useClass = $this->name_space.'\\'.str_replace('/','\\',$o);
 
             $this->extendClass = str_replace('/','\\',$o);

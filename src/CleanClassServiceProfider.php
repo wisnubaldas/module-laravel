@@ -7,6 +7,7 @@ use Wisnubaldas\CleanClass\Local\DomainCommand;
 use Wisnubaldas\CleanClass\Local\DriverCommand;
 use Wisnubaldas\CleanClass\Local\MakeRepositoriesCommand;
 use Wisnubaldas\CleanClass\Local\UsecaseCommand;
+use Wisnubaldas\CleanClass\Local\RouteCommand;
 
 class CleanClassServiceProfider extends ServiceProvider {
     public function boot()
@@ -17,6 +18,7 @@ class CleanClassServiceProfider extends ServiceProvider {
             DriverCommand::class,
             MakeRepositoriesCommand::class,
             UsecaseCommand::class,
+            RouteCommand::class,
             ]);
         }
     }

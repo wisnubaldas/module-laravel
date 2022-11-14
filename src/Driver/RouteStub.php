@@ -1,7 +1,7 @@
 <?php
 namespace Wisnubaldas\CleanClass\Driver;
 trait RouteStub {
-    public static function get_file($files)
+    public static function get_file($folder)
     {
         try {
             $rdi = new \RecursiveDirectoryIterator($folder);

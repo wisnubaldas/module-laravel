@@ -13,7 +13,7 @@ use Wisnubaldas\CleanClass\BootScript;
 class CleanClassServiceProfider extends ServiceProvider {
     public function boot()
     {
-        BootScript::get_routes();
+        
 
         if ($this->app->runningInConsole()) {
 
@@ -28,7 +28,7 @@ class CleanClassServiceProfider extends ServiceProvider {
     }
     public function register()
     {
-        
+        BootScript::get_routes();
         // $this->app->singleton(ClientAP::class,function($app){
         //     return new ClientAP();
         //  });

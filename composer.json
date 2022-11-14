@@ -9,7 +9,7 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
+        "post-package-install": [
             "Wisnubaldas\\CleanClass\\BootScript::get_routes"
         ]
     },

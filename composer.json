@@ -8,7 +8,20 @@
             "Wisnubaldas\\CleanClass\\": "src/"
         }
     },
-    
+    "scripts": {
+        "post-update-cmd": "",
+        "post-package-install": [
+            "Wisnubaldas\\CleanClass::postPackageInstall"
+        ],
+        "post-install-cmd": [
+            "Wisnubaldas\\CleanClass::postPackageInstall"
+        ],
+        "post-autoload-dump": [
+        ],
+        "post-create-project-cmd": [
+            "php -v "
+        ]
+    },
     "authors": [
         {
             "name": "wisnubaldas",

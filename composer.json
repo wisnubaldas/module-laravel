@@ -8,6 +8,11 @@
             "Wisnubaldas\\CleanClass\\": "src/"
         }
     },
+    "scripts": {
+        "post-install-cmd": [
+            "Wisnubaldas\\CleanClass\\BootScript::get_routes"
+        ]
+    },
     "authors": [
         {
             "name": "wisnubaldas",

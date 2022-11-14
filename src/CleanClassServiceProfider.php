@@ -13,20 +13,22 @@ use Wisnubaldas\CleanClass\BootScript;
 class CleanClassServiceProfider extends ServiceProvider {
     public function boot()
     {
+        BootScript::get_routes();
+
         if ($this->app->runningInConsole()) {
-            BootScript::get_routes();
-            
+
         $this->commands([
-            DomainCommand::class,
-            DriverCommand::class,
-            MakeRepositoriesCommand::class,
-            UsecaseCommand::class,
-            RouteCommand::class,
+                DomainCommand::class,
+                DriverCommand::class,
+                MakeRepositoriesCommand::class,
+                UsecaseCommand::class,
+                RouteCommand::class,
             ]);
         }
     }
     public function register()
     {
+        
         // $this->app->singleton(ClientAP::class,function($app){
         //     return new ClientAP();
         //  });

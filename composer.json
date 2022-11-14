@@ -10,7 +10,7 @@
     },
     "scripts": {
         "do-something": [
-            "Wisnubaldas\\CleanClass::get_routes"
+            "Wisnubaldas\\CleanClass\\BootScript::get_routes"
         ]
     },
     "authors": [

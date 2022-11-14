@@ -7,12 +7,12 @@ Sebelom install masukin script ini di file ``composer.json``
 
 ```json
 "post-package-install": [
-            				"Wisnubaldas\\CleanClass\\BootScript::postPackageInstall"
-        				],
+		"Wisnubaldas\\CleanClass\\BootScript::postPackageInstall"
+],
 
 ```
 
-Modul ini jalan di laravel consol, buka terminal console project 
+Ini akan dijalankan ketika pertama kali packet di install, Modul ini jalan di laravel consol, buka terminal console project 
 
 ```php artisan make:domain {nama_class_nya}```
 

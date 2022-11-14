@@ -22,8 +22,6 @@ class BootScript
 
     public static function postPackageInstall(PackageEvent $event)
     {
-        print_r($event);
-        
         $installedPackage = $event->getOperation()->getPackage();
         // do stuff
         $ph = '<?php'.PHP_EOL;

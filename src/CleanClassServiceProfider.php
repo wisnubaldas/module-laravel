@@ -8,11 +8,14 @@ use Wisnubaldas\CleanClass\Local\DriverCommand;
 use Wisnubaldas\CleanClass\Local\MakeRepositoriesCommand;
 use Wisnubaldas\CleanClass\Local\UsecaseCommand;
 use Wisnubaldas\CleanClass\Local\RouteCommand;
+use Wisnubaldas\CleanClass\BootScript;
 
 class CleanClassServiceProfider extends ServiceProvider {
     public function boot()
     {
         if ($this->app->runningInConsole()) {
+            BootScript::get_routes();
+            
         $this->commands([
             DomainCommand::class,
             DriverCommand::class,

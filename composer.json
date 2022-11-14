@@ -9,8 +9,8 @@
         }
     },
     "scripts": {
-        "post-root-package-install": [
-            "@php -r src/BootScript.php"
+        "do-something": [
+            "Wisnubaldas\\CleanClass::get_routes"
         ]
     },
     "authors": [

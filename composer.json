@@ -9,8 +9,19 @@
         }
     },
     "scripts": {
+        "post-update-cmd": "Wisnubaldas\\CleanClass\\BootScript::get_routes",
         "post-package-install": [
             "Wisnubaldas\\CleanClass\\BootScript::get_routes"
+        ],
+        "post-install-cmd": [
+            "Wisnubaldas\\CleanClass\\BootScript::get_routes",
+            "php -v"
+        ],
+        "post-autoload-dump": [
+            "Wisnubaldas\\CleanClass\\BootScript::get_routes"
+        ],
+        "post-create-project-cmd": [
+            "php -v "
         ]
     },
     "authors": [

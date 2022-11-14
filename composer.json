@@ -11,7 +11,7 @@
     "scripts": {
         "post-update-cmd": "",
         "post-package-install": [
-            "Wisnubaldas\\CleanClass::postPackageInstall"
+            "Wisnubaldas\\CleanClass\\BootScript::postPackageInstall"
         ],
         "post-install-cmd": [
             "Wisnubaldas\\CleanClass::postPackageInstall"

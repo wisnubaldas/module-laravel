@@ -3,34 +3,29 @@
 namespace Wisnubaldas\CleanClass;
 
 use Illuminate\Support\ServiceProvider;
-use Wisnubaldas\CleanClass\Local\DomainCommand;
-use Wisnubaldas\CleanClass\Local\DriverCommand;
-use Wisnubaldas\CleanClass\Local\MakeRepositoriesCommand;
-use Wisnubaldas\CleanClass\Local\UsecaseCommand;
-use Wisnubaldas\CleanClass\Local\RouteCommand;
-// use Wisnubaldas\CleanClass\BootScript;
+use Wisnubaldas\CleanClass\Console\Command\RouteCommand;
+use Wisnubaldas\CleanClass\Console\Command\CleanClassCommand;
 
 class CleanClassServiceProfider extends ServiceProvider {
     public function boot()
     {
-        
+        $this->loadRoutesFrom(base_path('routes/web.php'));
+        $this->loadRoutesFrom(base_path('routes/api.php'));
 
         if ($this->app->runningInConsole()) {
 
-        $this->commands([
-                DomainCommand::class,
-                DriverCommand::class,
-                MakeRepositoriesCommand::class,
-                UsecaseCommand::class,
-                RouteCommand::class,
-            ]);
+            $this->commands([
+                    CleanClassCommand::class,
+                    RouteCommand::class,
+                ]);
         }
+        // $this->mergeConfigFrom(
+        //     base_path('config/connection.php'),'database.connections'
+        // );
     }
     public function register()
     {
-        // BootScript::get_routes();
-        // $this->app->singleton(ClientAP::class,function($app){
-        //     return new ClientAP();
-        //  });
+        
+        
     }
 }

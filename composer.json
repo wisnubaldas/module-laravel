@@ -9,15 +9,6 @@
         }
     },
     "scripts": {
-        "post-update-cmd": "",
-        "post-package-install": [
-            "Wisnubaldas\\CleanClass\\BootScript::postPackageInstall"
-        ],
-        "post-install-cmd": [
-            "Wisnubaldas\\CleanClass::postPackageInstall"
-        ],
-        "post-autoload-dump": [
-        ],
         "post-create-project-cmd": [
             "php -v "
         ]
@@ -30,7 +21,9 @@
     ],
     "require": {
         "php" : "^7.4 | ^8.0",
-        "illuminate/console": "^6.20|^8.76|^9.0"
+        "illuminate/console": "^6.20|^8.76|^9.0",
+        "illuminate/support":"^9.0",
+        "illuminate/filesystem":"^9.0"
     },
     "extra": {
         "laravel": {

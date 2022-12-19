@@ -22,16 +22,14 @@ class DomainCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:domain {name} {--E|extend=}';
+    protected $signature = 'cc:domain {name} {--E|extend=}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Bikin class domain, 
-                            {name : Nama class untuk domainnya}
-                            {--extend|-E : Class domain yg akan di extend} ';
+    protected $description = 'Bikin class domain, {name : Nama class untuk domainnya} {--extend|-E : Class domain yg akan di extend} ';
     public function __construct(Filesystem $files)
     {
         parent::__construct();

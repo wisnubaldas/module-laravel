@@ -20,7 +20,7 @@ class RouteCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:route {name}';
+    protected $signature = 'cc:route {name}';
 
     /**
      * The console command description.
@@ -41,7 +41,7 @@ class RouteCommand extends Command
         $this->files = $files;
         $this->stub_name = 'routes.stub';
         $this->name_space = 'App\\UseCase';
-        $this->path_nya = 'routes/Web';
+        $this->path_nya = 'routes/web';
     }
     public function handle()
     {
@@ -57,7 +57,7 @@ class RouteCommand extends Command
 
         switch ($choice) {
             case 'api':
-                $this->path_nya = 'routes/Api';
+                $this->path_nya = 'routes/api';
                 break;
             
             default:

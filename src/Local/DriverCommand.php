@@ -16,7 +16,7 @@ class DriverCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:driver {name}';
+    protected $signature = 'cc:driver {name}';
 
     /**
      * The console command description.

@@ -22,7 +22,7 @@ class UsecaseCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:usecase {name} {--E|extend=}';
+    protected $signature = 'cc:usecase {name} {--E|extend=}';
 
     /**
      * The console command description.

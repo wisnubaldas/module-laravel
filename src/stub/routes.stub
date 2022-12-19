@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('{{CLASS_NAME}}')->group(function(){
-
+Route::prefix('{{ class }}')->group(function(){
+    Route::get('/', function () {
+        return ["message"=>"{{ class }}"];
+    });
 });
 

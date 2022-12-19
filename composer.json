@@ -38,7 +38,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Wisnubaldas\\CleanClass\\CleanClassServiceProfider"
+                "Wisnubaldas\\ConsoleInLaravel\\CleanClassServiceProfider"
             ]
         }
     },

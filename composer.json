@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "wisnubaldas/clean-class",
+    "name": "wisnubaldas/module-laravel",
     "description": "Bikin custom class di laravel",
     "license": "MIT",
     "autoload": {
@@ -11,6 +11,16 @@
     "scripts": {
         "post-create-project-cmd": [
             "php -v "
+        ],
+        "pre-install-cmd": [
+            "@php echo 'We Stand for Rusia....!!!'",
+            "@php echo PHP_EOL;",
+            "@php echo '##################################'"
+        ],
+        "pre-update-cmd": [
+            "@php echo 'We Stand for Rusia....!!!'",
+            "@php echo PHP_EOL;",
+            "@php echo '##################################'"
         ]
     },
     "authors": [

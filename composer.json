@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "name": "wisnubaldas/module-laravel",
+    "name": "wisnubaldas/console-in-laravel",
     "description": "Bikin custom class di laravel",
     "license": "MIT",
     "autoload": {

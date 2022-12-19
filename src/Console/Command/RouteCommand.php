@@ -1,11 +1,11 @@
 <?php
 
-namespace Wisnubaldas\CleanClass\Console\Command;
+namespace Wisnubaldas\ConsoleInLaravel\Console\Command;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use Wisnubaldas\CleanClass\Driver\CommandStub;
-use Wisnubaldas\CleanClass\Console\CommandTrait;
+use Wisnubaldas\ConsoleInLaravel\Driver\CommandStub;
+use Wisnubaldas\ConsoleInLaravel\Console\CommandTrait;
 
 class RouteCommand extends Command
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Wisnubaldas\CleanClass\Driver;
+namespace Wisnubaldas\ConsoleInLaravel\Driver;
 trait RouteStub {
     public static function get_file($folder)
     {

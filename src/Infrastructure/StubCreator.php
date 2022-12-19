@@ -1,5 +1,5 @@
 <?php
-namespace Wisnubaldas\CleanClass\Infrastructure;
+namespace Wisnubaldas\ConsoleInLaravel\Infrastructure;
 class StubCreator 
 {
     // create file stub

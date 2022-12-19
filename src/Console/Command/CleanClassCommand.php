@@ -1,12 +1,12 @@
 <?php
 
-namespace Wisnubaldas\CleanClass\Console\Command;
+namespace Wisnubaldas\ConsoleInLaravel\Console\Command;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use Wisnubaldas\CleanClass\Infrastructure\CleanClass;
+use Wisnubaldas\ConsoleInLaravel\Infrastructure\ConsoleInLaravel;
 use Symfony\Component\Console\Formatter\OutputFormatterStyle;
-use Wisnubaldas\CleanClass\Console\CommandTrait;
+use Wisnubaldas\ConsoleInLaravel\Console\CommandTrait;
 class CleanClassCommand extends Command
 {
     use CommandTrait;

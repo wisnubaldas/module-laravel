@@ -1,5 +1,5 @@
 <?php
-namespace Wisnubaldas\CleanClass\Driver;
+namespace Wisnubaldas\ConsoleInLaravel\Driver;
 trait CommandStub {
     public function getStubVariables()
     {

@@ -1,5 +1,5 @@
 <?php
-namespace Wisnubaldas\CleanClass\Console;
+namespace Wisnubaldas\ConsoleInLaravel\Console;
 
 /**
  * 

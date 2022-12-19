@@ -1,9 +1,9 @@
 <?php
 
-namespace Wisnubaldas\CleanClass\Local;
+namespace Wisnubaldas\ConsoleInLaravel\Local;
 
 use Illuminate\Console\Command;
-use Wisnubaldas\CleanClass\Driver\MakeStub;
+use Wisnubaldas\ConsoleInLaravel\Driver\MakeStub;
 use Illuminate\Filesystem\Filesystem;
 
 class MakeRepositoriesCommand extends Command

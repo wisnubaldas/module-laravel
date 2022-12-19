@@ -1,11 +1,11 @@
 <?php
 
-namespace Wisnubaldas\CleanClass\Local;
+namespace Wisnubaldas\ConsoleInLaravel\Local;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 // use App\Driver\MakeStub;
-use Wisnubaldas\CleanClass\Driver\CommandStub;
+use Wisnubaldas\ConsoleInLaravel\Driver\CommandStub;
 
 class DomainCommand extends Command
 {

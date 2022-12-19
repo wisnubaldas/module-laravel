@@ -1,10 +1,10 @@
 <?php
 
-namespace Wisnubaldas\CleanClass;
+namespace Wisnubaldas\ConsoleInLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use Wisnubaldas\CleanClass\Console\Command\RouteCommand;
-use Wisnubaldas\CleanClass\Console\Command\CleanClassCommand;
+use Wisnubaldas\ConsoleInLaravel\Console\Command\RouteCommand;
+use Wisnubaldas\ConsoleInLaravel\Console\Command\ConsoleInLaravelCommand;
 
 class CleanClassServiceProfider extends ServiceProvider {
     public function boot()

@@ -1,6 +1,6 @@
 <?php
 namespace Wisnubaldas\ConsoleInLaravel\Infrastructure;
-class ConsoleInLaravel extends StubCreator
+class CleanClass extends StubCreator
 {
     public $class_name;
     public $option;

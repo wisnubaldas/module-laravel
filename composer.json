@@ -13,14 +13,12 @@
             "php -v "
         ],
         "pre-install-cmd": [
-            "@php echo 'We Stand for Rusia....!!!'",
-            "@php echo PHP_EOL;",
-            "@php echo '##################################'"
+            "echo 'We Stand for Rusia....!!!'",
+            "echo '##################################'"
         ],
         "pre-update-cmd": [
-            "@php echo 'We Stand for Rusia....!!!'",
-            "@php echo PHP_EOL;",
-            "@php echo '##################################'"
+            "echo 'We Stand for Rusia....!!!'",
+            "echo '##################################'"
         ]
     },
     "authors": [
